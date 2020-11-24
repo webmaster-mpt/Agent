@@ -1,0 +1,11 @@
+ <!-- <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>Телефон: <? echo  $telephone = Klient::find()->where('id=' . $klient->id)->one()->telephone;?></p>
+                    <p>Улица: <? echo  $address = Klient::find()->where('id=' . $klient->id)->one()->address;?></p>
+                    <p>Операция: <? echo  $address = Operations::find()->where('id=' . $klient->id_operations)->one()->name;?></p>
+                    <p>Цена: <?echo  $cost = Klient::find()->where('id=' . $klient->id)->one()->cost;?> руб</p>
+                </div>
+                <div class="panel-heading">
+                    <a class="pull" href="<?= Yii::$app->urlManager->createUrl(['buyer/create', 'id' => $klient->id]);?>">Купить</a>
+                </div>
+            </div> -->
