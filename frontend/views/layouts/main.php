@@ -55,9 +55,6 @@ AppAsset::register($this);
         ['label' => 'Главная', 'url' => ['/site/index']],
         ['label' => 'Клиент', 'url' => ['/klient-user']],
         ['label' => 'Помощь', 'url' => ['/help']],
-            // ['label' => 'О нас', 'url' => ['/site/about']],
-        // ['label' => 'Контакты', 'url' => ['/site/contact']],
-        
     ];
     
     if(SignupForm::hasRole(2)){ $menuItems[] = 

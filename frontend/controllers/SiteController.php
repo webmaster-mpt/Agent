@@ -84,13 +84,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $query="Select * from `Klient` WHERE `activeContract` LIKE 'составлен'";
-        $klients = Klient::findBySql($query)->all();
-        
-        return $this->render('index',
-        [
-            'klients'=>$klients,
-        ]
+            $query="Select * from `Klient` WHERE `activeContract` LIKE 'составлен'";
+            $klients = Klient::findBySql($query)->all();
+            
+            return $this->render('index',
+            [
+                'klients'=>$klients,
+            ]
     );
     }
     /**

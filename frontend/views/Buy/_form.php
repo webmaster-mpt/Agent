@@ -14,7 +14,6 @@ use yii\widgets\ActiveForm;
 <div class="buyer-form">
     
     <?php $form = ActiveForm::begin(['id' => 'id_klient']); ?>
-    
 
     <?= $form->field($model, 'Fname')->textInput(['maxlength' => true]) ?>
     

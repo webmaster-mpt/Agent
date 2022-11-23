@@ -80,7 +80,7 @@ class SignupForm extends Model
         $user->setPassword($this->password);
         $user->generateAuthKey();
         $user->status = User::STATUS_ACTIVE;
-        // $user->generateEmailVerificationToken();
+        //$user->generateEmailVerificationToken();
         if ($file) {
             $photoname= uniqid($this->username) . $file->baseName . '.' . $file->extension;
             $file->saveAs(Yii::getAlias('@frontend/web') . '/uploads/' . $photoname);
